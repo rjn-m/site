@@ -1,4 +1,4 @@
-@import "http://webfonts.ru/import/firasans.css";
+﻿@import "http://webfonts.ru/import/firasans.css";
 
 
 html {
@@ -6,8 +6,9 @@ html {
     font-size: 14px;
     line-height: 21px;
     font-weight: 100;
-    box-sizing: border-box;
     color: #212121;
+    box-sizing: border-box;
+	
 }
 
 
