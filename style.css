@@ -1,0 +1,382 @@
+@import "http://webfonts.ru/import/firasans.css";
+
+
+html {
+    font-family: 'Fira Sans';
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 100;
+    box-sizing: border-box;
+    color: #212121;
+}
+
+
+h1 {
+    font-size: 42px;
+    margin-top: 85px;
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    font-size: 21px;
+    line-height: 27.82px;
+    color: #8a8a8a;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 21px;
+    line-height: 28px;
+}
+
+h4 {
+    font-size: 21.26px;
+    line-height: 28.35px;
+}
+
+i {
+    font-family: 'FontAwesome';
+}
+
+
+/* HEADER */
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 90px;
+    background: #8cc34b;
+    color: #fff;
+    padding: 14px 28px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position:relative; 
+}
+
+header h4 {margin: 0;}
+
+header .user {float:left;}
+
+header .social {float:right; margin-top: 16px; margin-right: 3px;}
+
+header .user div {display: inline-block; margin-top: 7px;}
+
+header .user img {float:left; margin-right: 18px;}
+
+header .social a {font-size: 35px; margin-right: 16px; color: #e1eed4;}
+
+header .social a:last-child {margin-right: 0;}
+
+header .social a:hover {color: #fff;}
+
+
+
+/* HEADER END */
+
+main {
+    width: 100%;
+}
+
+/* ABOUT */
+
+.about {
+    text-align: center;
+    overflow: auto;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 75px;
+}
+
+.about-block {
+    float: left;
+    width: 460px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    text-align: left;
+    margin-top: 24px;
+    
+}
+.about-block:last-child {
+    margin-right: 0;
+}
+
+.about-block__image {
+    display: inline-block;
+    width: 140px; 
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.about-block__text-field {
+    display: inline-block;
+    width: 280px;
+}
+
+
+.about-block__text-field h3{
+    margin: 0 0 8px 0;
+}
+
+.about-block__text-field p{
+    margin: 0;
+    color: #727272; 
+}
+
+.about-block__text-field p a{
+    color: #03a9f4;
+    text-decoration: underline;
+}
+
+
+/* ABOUT END */
+
+
+/* COURSES */
+
+.courses {
+    width: 100%;
+     display: block;
+  position: relative;
+    background-color: rgba(246,247,242,1);
+     
+}
+
+.courses-item__text-field {
+   padding: 20px;
+    text-align: left;
+}
+
+.courses  .container {
+     max-width: 940px;
+    margin: 0 auto;
+    padding: 65px 10px;
+    text-align: center;
+     overflow: hidden;
+}
+
+.courses  .container h1 {
+   margin-top: 0;
+}
+
+.courses-item {
+    position: relative;
+    float: left;
+    width: 300px;
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.courses-item:nth-child(3n+2) {
+    margin-right: 0;
+}
+
+
+.courses-item__hover-line {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #8cc34b;
+    top: 165px;
+    display: none;
+
+}
+
+
+.courses-item img {
+    display: block;
+}
+
+.courses-item:hover .courses-item__hover-line{
+     display: block;
+ 
+}
+.courses-item a{
+     color: #212121;
+    text-decoration: none;
+ 
+}
+.courses-item:hover h3{
+     color: #8cc34b;
+ 
+}
+
+.courses-item span{
+     color: #b6b6b6;
+     
+}
+
+.courses-item__checkbox {
+    background: #f6f7f2;
+    padding: 20px;
+}
+
+
+.courses-item__checkbox {
+    text-align: left;
+}
+
+.courses-item__checkbox .label{
+    font-size: 18px;
+}
+
+
+
+
+.checkbox {
+    display: none;
+    
+}
+ 
+
+.checkbox-custom {
+    position: relative;    
+    width: 20px;      
+    height: 20px;  
+    border: 2px solid #b6b6b6;
+    border-radius: 2px;
+    margin-right:16px;
+    box-sizing:border-box
+}
+ 
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+ 
+.checkbox:checked + .checkbox-custom::before {
+    font-family: 'FontAwesome'; 
+    content: "";      
+    text-align: center;
+    display: block;   
+    position: absolute;  
+    color: #fff;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: #acd37e;     
+    border-radius: 2px;
+   
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #8cc34b;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay-vis {
+    opacity: 0.2;
+    visibility: visible;
+    
+}
+
+.done {
+  color: #acd37e;   
+}
+
+.ghost {
+    opacity: 0.7;
+}
+
+
+.hide {
+     -webkit-transition: .4s ease-out;
+     -webkit-transition-delay: 0.5s;
+     -o-transition: .4s ease-out;
+     -o-transition-delay: 0.5s;
+     -moz-transition: .4s ease-out;
+     -moz-transition-delay: 0.5s;
+     transition: .4s ease-out;
+     transition-delay: 0.5s;
+     opacity: 0;
+     visibility: hidden;
+}
+
+
+.courses-all-done {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:  #8cc34b;
+}
+
+.visible-all-done {
+     -webkit-transition: .4s ease-out;
+     -webkit-transition-delay: 0.5s;
+     -o-transition: .4s ease-out;
+     -o-transition-delay: 0.5s;
+     -moz-transition: .4s ease-out;
+     -moz-transition-delay: 0.5s;
+     transition: .4s ease-out;
+     transition-delay: 0.5s;
+     opacity: 1;
+     visibility: visible;
+}
+
+/* COURSES END */
+
+
+/* FOOTER */
+
+
+
+
+footer {
+    background: #212121;
+    padding: 20px 0 18px 0;
+    text-align: center;
+}
+
+footer p{
+    color: rgba(255,255,255,0.5);
+    margin: 0 auto;
+    max-width:940px;
+}
+
+
+
+
+html,
+body {
+    height: 100%;
+}
+ 
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+ 
+footer {
+    height: 40px; /* Задаем фиксированную высоту для футера */
+}
+ 
+main {
+    padding-bottom: 40px; /* Значение должно равняться высоте нашего футера */
+}
+ 
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+/* FOOTER END*/
